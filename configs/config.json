@@ -1,0 +1,50 @@
+{
+    "version": "1.0",
+
+    "serverPort": 8601,
+    "serverPort_Contract": 8602,
+
+    "httpRpc": "http://54.235.21.82:9610",
+    "wssRpc": "ws://54.235.21.82:9611",
+    "listenerAddr_start_0": "http://54.152.94.145:9705/listener/listenerModel1",
+    "listenerAddr_start_1": "http://54.152.94.145:9705/listener/listenerModel2",
+    "listenerAddr_start_2": "http://54.152.94.145:9705/v3/startModel3 ",
+    "listenerAddr_start_3": "http://54.152.94.145:9705/v3/startModel4",
+
+    "listenerAddr_updateGwei": "http://54.152.94.145:9705/v3/updateGwei",
+
+
+
+    "listenerAddr_simpleBuy_Contract": "http://ec2-54-179-84-137.ap-southeast-1.compute.amazonaws.com:9705/bsc/contract/simpleBuy",
+    "listenerAddr_simpleBuyV3_Contract": "http://ec2-54-179-84-137.ap-southeast-1.compute.amazonaws.com:9705/bsc/contract/simpleBuyV3",
+    "listenerAddr_updateGwei_Contract": "http://ec2-54-179-84-137.ap-southeast-1.compute.amazonaws.com:9705/bsc/contract/updateGwei",
+
+    "defaultGwei": "5",
+    "baseToken": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+    "swapRuoterAddress": "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+    "funcNameSign": "./configs/funcNameSign.json",
+
+    "abiFuncSign": "./configs/abiFuncSign.json",
+    "pancakeSwapABI": "./configs/pancakeswapv2.json",
+    "pancakeSwapRouterAddress":"0x10ED43C718714eb63d5aA57B78B54704E256024E",
+    "pancakeFactoryAddress":"0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73",
+    "pancakeFactoryABI":"./configs/pancakeFactoryABI.json",
+    "pancakePairABI": "./configs/pancakePairABI.json",
+    "erc20ABI": "./configs/erc20ABI.json",
+    "traderSwapABI": "./configs/traderswap.json",
+
+    "apeFactoryAddress": "0x0841BD0B734E4F5853f0dD8d7Ea041c241fb0Da6",
+    "apeRouterAddress": "0xcF0feBd3f17CEf5b47b0cD257aCf6025c5BFf3b7",
+    "apeFactoryABI": "./configs/apeFactory.json",
+    "apeRouterABI":"./configs/apeRouter.json",
+    "apePairABI":"./configs/apePair.json",
+
+    "tokenA": "0x55d398326f99059fF775485246999027B3197955",
+    "tokenB": "0x811b279463a89e4b6e35805174c9190763f72614",
+    "userPublicKey": "0xc609B941D3f9a179D3a1f81958e1d1593e8F029b",
+    "userPrivateKey": "The-strongest-curse-you-will-be-killed-on-this-night-zero-oclock",
+
+
+    "myContractABI":"./configs/myContractABI.json",
+    "myContractAddress":"0x8678Ce4e3A607CdC1D0Dec5910e4Ee36ebEBBdF7"
+}

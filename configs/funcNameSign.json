@@ -1,0 +1,19 @@
+{
+    "addLiquidity": "0xe8e33700",
+    "swapExactETHForTokens": "0x7ff36ab5",
+    "swapExactETHForTokensSupportingFeeOnTransferTokens": "0xb6f9de95",
+    "swapETHForExactTokens": "0xfb3bdb41",
+    "swapExactTokensForTokens": "0x38ed1739",
+    "swapTokensForExactTokens": "0x8803dbee",
+    "swapExactTokensForTokensSupportingFeeOnTransferTokens": "0x5c11d795",
+
+    "swapExactTokensForETH": "0x18cbafe5",
+    "swapExactTokensForETHSupportingFeeOnTransferTokens": "0x791ac947",
+    "swapTokensForExactETH": "0x4a25d94a",
+
+
+    "addLiquidityETH": "0xf305d719",
+    "approve": "0x095ea7b3",
+
+    "swapExactAVAXForTokens": "0xa2a1623d"
+}

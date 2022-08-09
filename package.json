@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "@pancakeswap/sdk": "^2.4.5",
+    "@uniswap/sdk": "^3.0.3",
+    "axios": "^0.26.1",
+    "big-number": "^2.0.0",
+    "ethers": "^5.6.2",
+    "http": "^0.0.1-security",
+    "web3": "^1.7.1"
+  },
+  "name": "web3_js",
+  "version": "1.0.0",
+  "main": "contractEvent.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanjingzhan/Web3_JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanjingzhan/Web3_JS/issues"
+  },
+  "homepage": "https://github.com/yanjingzhan/Web3_JS#readme",
+  "description": ""
+}

@@ -1,0 +1,54 @@
+const Web3 = require('web3');
+const axios = require('axios');
+const http = require('http');
+
+const web3 = new Web3(new Web3.providers.WebsocketProvider('wss://api.dognode.com/bsc/e48d0e15458d95c1c5b50ea96bca8225'));
+
+function postDataUseAxios(url, data) {
+    // console.log(new Date().getTime(), ",开始发送");
+    axios.post(url, data)
+        .then((res) => {
+            // console.log(new Date().getTime(), ",返回时间");
+            console.log(`Status: ${res.status}`);
+            console.log('Body: ', res.data);
+        }).catch((err) => {
+            console.error(err);
+        });
+}
+
+async function subscribePendingPool(funcCode, from, to, inputContains) {
+    subscription = web3.eth.subscribe('pendingTransactions', function (error, result) {
+        if (error) {
+            console.log(`订阅失败,${error}`);
+
+            return `订阅失败,${error}`;
+        }
+    });
+
+    subscription.on("data", async (txHash) => {
+        let tx = await web3.eth.getTransaction(txHash);
+        // console.log(JSON.stringify(tx));
+
+        if (tx
+            && tx.input
+            && (!from || tx.from.toLowerCase().indexOf(from.toLowerCase()) >= 0)
+            && (!to || tx.to.toLowerCase().indexOf(to.toLowerCase()) >= 0)
+            && (!funcCode || tx.input.startsWith(funcCode))
+			&& (!inputContains || tx.input.toLowerCase().indexOf(inputContains.toLowerCase()) >= 0)
+
+        )
+            {
+                console.log(JSON.stringify(tx));
+
+                var simpleData = {};
+                simpleData.gasPrice = tx.gasPrice;
+
+                postDataUseAxios('xxxxxxxxxxxxxxx',simpleData);
+            }
+
+
+    });
+}
+
+//0xe8e33700
+subscribePendingPool(null,null,'0x10ED43C718714eb63d5aA57B78B54704E256024E',null);

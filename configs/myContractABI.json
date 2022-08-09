@@ -1,0 +1,370 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amountIn",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amountOutMin",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address[]",
+				"name": "tokenList",
+				"type": "address[]"
+			}
+		],
+		"name": "BuyList",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amountIn",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amountOutMin",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address[]",
+				"name": "tokenList",
+				"type": "address[]"
+			}
+		],
+		"name": "BuyListNoFee",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes",
+				"name": "dataList",
+				"type": "bytes"
+			}
+		],
+		"name": "BuyNativeCallData",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amountIn",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address[]",
+				"name": "tokenList",
+				"type": "address[]"
+			},
+			{
+				"internalType": "address[]",
+				"name": "pairList",
+				"type": "address[]"
+			}
+		],
+		"name": "BuyNativeTest",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amountIn",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "pairAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "tokenA",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "tokenB",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amountOutAdd",
+				"type": "uint256"
+			}
+		],
+		"name": "BuyNativeTest2",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amountIn",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "pairAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "tokenA",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amountOutAdd",
+				"type": "uint256"
+			}
+		],
+		"name": "BuyNativeTestSingle",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amountIn",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "pairAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "tokenA",
+				"type": "address"
+			}
+		],
+		"name": "GetAmountOutTest",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "amountOut",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "pairAddress",
+				"type": "address"
+			}
+		],
+		"name": "GetFactoryAndRouterAddress",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "ROOT4146650865",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "factoryAddr",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "routerAddr",
+				"type": "address"
+			}
+		],
+		"name": "SetFactoryToRouter",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "factoryAddr",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "routerAddr",
+				"type": "address"
+			}
+		],
+		"name": "SetFactoryToRouterWithAssembly",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_sr",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "_uni",
+		"outputs": [
+			{
+				"internalType": "contract IUniswapV2Router02",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "factoryAddr",
+				"type": "address"
+			}
+		],
+		"name": "GetRouter",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "routerAddr",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "factoryAddr",
+				"type": "address"
+			}
+		],
+		"name": "GetRouterWithAssembly",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "routerAddr",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "lastAmountOutByLibrary",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "lastAmountOutByRouter",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "lastFactory",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "lastRouter",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "poolsize",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
